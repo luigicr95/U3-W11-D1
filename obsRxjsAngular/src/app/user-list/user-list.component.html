@@ -1,0 +1,20 @@
+<h2>Followed Users: {{ followedUsers.length }}</h2>
+
+<div class="row">
+  <div class="col-sm-3" *ngFor="let item of userList">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">
+          Name: {{ item.name }} <br />
+          Username:{{ item.username }}
+        </h5>
+        <p class="card-text">
+          With supporting text below as a natural lead-in to additional content.
+        </p>
+        <a href="#" class="btn btn-primary" (click)="deleteUser(item)"
+          >Delete</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
